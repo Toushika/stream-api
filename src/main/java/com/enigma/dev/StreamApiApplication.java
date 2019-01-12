@@ -27,6 +27,10 @@ public class StreamApiApplication {
 		List<Product>newProductList=new ArrayList<>();
 		CheckInfoUtility checkInfoUtility = new CheckInfoUtility();
 		checkInfoUtility.checkPrice(productList,newProductList);
+		checkInfoUtility.filterPrice(productList);
+		checkInfoUtility.listUpProductName(productList);
+		checkInfoUtility.productSortedByPrice(productList);
+	  checkInfoUtility.traverseProduct(productList);
 	}
 
 }
